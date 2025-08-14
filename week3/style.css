@@ -1,0 +1,87 @@
+body {
+    background-color:#16365d;
+    width: 100%;
+    height: 100%;
+}
+.insert1 {
+    margin-left: 90%;
+    color: white;
+}
+.color1 {
+    color: red;
+    text-decoration: underline;
+}
+.footers {
+    color: magenta;
+}
+.media {
+    text-align: center;
+    color: red;
+}
+.pic {
+    color: yellow;
+    text-decoration: underline;
+}
+.text {
+    color: blue;
+}
+.quick{
+    color: greenyellow;
+}
+.format {
+    border: 2px solid black;
+    width: 50%;
+    padding-bottom: 20px;
+    color: white;
+    background: black;
+    border-top:2px solid red;
+    border-left:2px solid red;
+    font-family: sans-serif;
+}
+.directly{
+    color: blue;
+}
+.theme {
+    color: red;
+    font-family: bold;
+    font-size: 20px;
+}
+.include {
+    color: black;
+    background-color: green;
+     font-family: bold;
+}
+.controls {
+    color: rgb(4, 165, 4);
+    
+}
+.control {
+    border: 3px solid black;
+    width: 99%;
+    padding: 20px;
+    background-color: black;
+    color: white;
+    font-style: italic;
+}
+.galleries {
+    color: yellow;
+    border-bottom: 1px solid yellow;
+    width: 50%;
+    text-align: center;
+
+}
+.insert {
+    background-color: red;
+    color: white;
+    font-family: bold;
+}
+.red {
+    color: red;
+}
+p {
+    color: white;
+    font-family: arial;
+}
+ul {
+    color: white;
+}
