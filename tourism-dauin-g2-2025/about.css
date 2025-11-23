@@ -1,0 +1,157 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+.logo {
+  width: 80px;
+  height: auto;
+  display: block;
+}
+
+.hero-img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  filter: brightness(60%);
+}
+
+.homepage {
+  top: 1px;
+  position: absolute;
+  left: 0;              
+  right: 0;
+  display: flex;
+  justify-content: space-between;  
+  align-items: center;
+  padding: 10px 50px;  
+  background: rgba(202, 113, 113, 0.2);
+  backdrop-filter: blur(8px);
+}
+
+.nav-links {
+  display: flex;
+  gap: 25px; 
+}
+
+
+.nav-links a {
+  margin-left: 20px;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #080808;
+}
+
+.hero-section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh; 
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-image: url('images/Dauin-Dumaguete-Apo-Diving-Philippines-Banner.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: brightness(0.8);
+  padding-top: 120px; 
+}
+
+
+.hero-img { display: none; }
+
+.about-container {
+  width: 80%;
+  position: relative;
+  z-index: 1;
+  margin-top: 5px;
+  background: rgba(0, 0, 0, 0.5); 
+  backdrop-filter: blur(8px);
+  padding: 35px;
+  border-radius: 20px;
+  margin-bottom: 30px;
+  box-shadow: 0 0 25px rgba(0,0,0,0.3);
+  color: white;
+}
+
+.about-container h1 {
+  margin-top: 10px;
+  font-size: 45px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.about-container p {
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.gallery-section {
+  width: 90%;
+  max-width: 1200px;
+  position: relative;
+  z-index: 2; 
+  text-align: center;
+  color: rgb(255, 255, 255);
+  margin-bottom: 50px;
+}
+
+.gallery-section h2 {
+  font-size: 38px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.gallery img {
+  width: 350px; 
+  height: 220px;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.4);
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+  filter: brightness(80%);
+}
+
+@media (max-width: 768px) {
+  .about-container {
+    width: 90%;
+    margin-left: 5%;
+    padding: 25px;
+  }
+
+  .gallery img {
+    width: 90%;
+    height: auto;
+  }
+
+  .homepage {
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+  }
+}
