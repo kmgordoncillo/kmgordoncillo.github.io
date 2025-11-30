@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.logo {
+  width: clamp(45px, 10vw, 80px);
+  height: auto;
+  display: block;
+}
+
+.homepage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px clamp(20px, 6vw, 50px);
+  background: rgba(202, 113, 113, 0.2);
+  backdrop-filter: blur(8px);
+  z-index: 10;
+}
+
+.nav-links {
+  display: flex;
+  gap: 50px;
+}
+
+.nav-links a {
+  margin-left: 20px;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+
+.nav-links a:hover {
+  color: #080808;
+}
+
+.hero-section {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-image: url('images/Dauin-Dumaguete-Apo-Diving-Philippines-Banner.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: clamp(100px, 15vw, 150px);
+}
+
+.hero-img {
+  display: none;
+}
+
+.about-container {
+  width: 90%;
+  top: 1px;
+  background: rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(12px);
+  padding: clamp(20px, 4vw, 35px);
+  border-radius: 20px;
+  color: white;
+  box-shadow: 0 0 25px rgba(0,0,0,0.3);
+}
+
+.about-container h1 {
+  margin-top: 5px;
+  font-size: clamp(2rem, 5vw, 45px);
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: rgb(249, 233, 233);
+}
+
+.about-container p {
+  font-size: clamp(1rem, 2.2vw, 20px);
+  line-height: 1.6;
+  color: antiquewhite;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 600px) {
+  .homepage {
+    padding: 10px 20px;
+  }
+
+  .about-container {
+    width: 92%;
+    padding: 20px;
+  }
+}

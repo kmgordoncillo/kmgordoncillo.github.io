@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.logo {
+  width: 80px;
+}
+
+.hero-section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("images/Dauin-Dumaguete-Apo-Diving-Philippines-Banner.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero-img { display: none; }
+
+.homepage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+padding: 10px clamp(20px, 6vw, 50px);
+  background: rgba(202, 113, 113, 0.2);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  z-index: 10;
+}
+
+.nav-links {
+  display: flex;
+  gap: 50px;
+}
+
+.nav-links a {
+  margin-left:30px;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #000;
+}
+
+.government-section {
+  width: 90%;
+  max-width: 1200px;
+  background: rgba(188, 243, 242, 0.33);
+  padding: 40px 20px;
+  margin-top: 120px;
+  margin-bottom: 40px;
+  border-radius: 15px;
+  position: relative;
+  backdrop-filter: blur(5px);
+}
+
+.government-section h2 {
+  text-align: center;
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  color: #000;
+  margin-bottom: 30px;
+}
+
+.officials-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 25px;
+}
+
+.official-card {
+  background: rgb(238, 230, 230);
+  border-radius: 15px;
+  overflow: hidden;
+  padding-bottom: 20px;
+  text-align: center;
+  box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.official-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 30px rgba(0,0,0,0.2);
+}
+
+.official-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.official-card h3 {
+  margin: 15px 10px 5px;
+  font-size: clamp(1rem, 2vw, 1.3rem);
+  color: #111;
+}
+
+.official-card p {
+  padding: 0 15px;
+  font-size: clamp(0.9rem, 1.5vw, 1rem);
+  color: #222;
+  line-height: 1.5;
+}
+
+@media (max-width: 900px) {
+  .homepage {
+    padding: 10px 20px;
+  }
+
+  .nav-links {
+    gap: 50px;
+  }
+
+  .nav-links a {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 600px) {
+  .homepage {
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+  }
+
+  .official-card img {
+    height: 180px;
+  }
+
+  .government-section {
+    margin-top: 150px;
+    padding: 30px 15px;
+  }
+}
+
+@media (max-width: 400px) {
+  .logo {
+    width: 60px;
+  }
+
+  .nav-links a {
+    font-size: 13px;
+  }
+}

@@ -1,0 +1,224 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: url("images/Dauin-Dumaguete-Apo-Diving-Philippines-Banner.jpg") center/cover no-repeat fixed;
+  color: white;
+  min-height: 100vh;
+}
+
+.button {
+  position: fixed;
+  top: 20px;
+  left: 50px;
+  z-index: 1000;
+}
+
+.logo {
+  width: 80px;
+  transition: 0.3s;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+}
+
+.dev-section {
+  margin-top: 50px; 
+  width: 100%;
+  min-height: auto; 
+  padding: 50px 20px 50px; 
+  text-align: center;
+  backdrop-filter: blur(4px);
+}
+
+.dev-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+  gap: 20px;
+  justify-items: center;
+  align-items: start;
+}
+
+.dev-title {
+  font-size: 3rem;
+  font-weight: 600;
+  color: rgb(15, 16, 15);
+  margin-bottom: 20px;
+  margin-top: 5px;
+  text-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+  letter-spacing: 1px;
+  
+}
+
+.dev-card {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  padding: 20px;
+  width: 100%;
+  max-width: 350px;
+  backdrop-filter: blur(6px);
+  color: rgb(255, 254, 254);
+  text-align: center;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.dev-card:hover {
+  transform: translateY(-5px) scale(1.05);
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.dev-img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 15px;
+  margin-bottom: 15px;
+  border: 3px solid #000000; 
+}
+
+.dev-card h3 {
+  font-size: 1.3rem;
+  font-weight: 550;
+  margin-bottom: 5px;
+  color: #101010;
+}
+
+.dev-card p {
+  margin-top: 5px;
+  font-size: 1rem;
+  color: #01080c;
+  font-weight: bold;
+}
+
+@media (max-width: 1200px) {
+  .dev-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .dev-section {
+    padding-top: 120px;
+  }
+
+  .dev-title {
+    font-size: 2.2rem;
+  }
+
+  .dev-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .dev-img {
+    height: 220px;
+  }
+}
+
+@media (max-width: 480px) {
+  .dev-img {
+    height: 200px;
+  }
+
+  .dev-title {
+    font-size: 2rem;
+  }
+}
+.acsat {
+  height: 100px;
+  width: 80px;
+}
+
+.cse {
+  height: 100px;
+  width: 80px;
+}
+
+.dev-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.title-logo {
+
+  height: 100px;
+  width: 100px;
+  object-fit: contain;
+  border-radius: 50%;          
+  border: 3px solid #fff;                 
+  background: rgba(255,255,255,0.2); 
+}
+
+.info-toggle {
+  display: none;
+}
+
+.dev-card label img {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.dev-card label img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #0d6efd;
+}
+
+.more-info {
+  display: none;
+  margin-top: 10px;
+  background: rgba(230, 218, 218, 0.505);
+  padding: 10px;
+  border-radius: 10px;
+  animation: fadeIn 0.3s ease;
+}
+.more-info p {
+  color: rgb(1, 28, 14);
+}
+.info-toggle:checked ~ .more-info {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-5px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.nav-links {
+  display: flex;
+  gap: 50px; 
+}
+
+
+.nav-links a {
+  margin-left: 20px;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #080808;
+}
+
+.homepage {
+  top: 1px;
+  position: absolute;
+  left: 0;              
+  right: 0;
+  display: flex;
+  justify-content: space-between;  
+  align-items: center;
+  padding: 10px 50px;  
+  background: rgba(202, 113, 113, 0.2);
+  backdrop-filter: blur(8px);
+}
+
+

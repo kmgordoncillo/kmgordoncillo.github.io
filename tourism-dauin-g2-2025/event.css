@@ -1,0 +1,123 @@
+.nav-links {
+  display: flex;
+  gap: 50px; 
+}
+
+.nav-links a {
+  margin-left: 20px;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #080808;
+}
+
+.homepage {
+  top: 1px;
+  position: absolute;
+  left: 0;              
+  right: 0;
+  display: flex;
+  justify-content: space-between;  
+  align-items: center;
+  padding: 10px 50px;  
+  background: rgba(202, 113, 113, 0.2);
+  backdrop-filter: blur(8px);
+}
+
+.hero-section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.hero-img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  filter: brightness(60%);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1; 
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+}
+
+.logo {
+  width: 80px;
+  height: auto;
+  display: block;
+}
+
+.festivals-section {
+  padding: 100px 50px 50px 50px;
+  color: white;
+}
+
+.festivals-section h2 {
+  margin-left: 120px;
+  margin-top: 10px;
+  text-align: left;
+  margin-bottom: 20px;
+  font-size: 3rem;
+  color: #ffcc00;
+}
+
+.festivals-container {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.festival-card {
+  display: flex;
+  gap: 30px;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 30px;
+  border-radius: 15px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.festival-card img {
+  width: 500px;
+  max-width: 100%;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+.festival-details {
+  flex: 1;
+}
+
+.festival-details h3 {
+  margin-top: 0;
+  color: #ffcc00;
+}
+
+.festival-details p {
+  line-height: 1.6;
+  margin-bottom: 15px;
+  color: #f1f1f1;
+}
+
+@media screen and (max-width: 900px) {
+  .festival-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .festival-card img {
+    margin: 0 auto;
+  }
+}
+

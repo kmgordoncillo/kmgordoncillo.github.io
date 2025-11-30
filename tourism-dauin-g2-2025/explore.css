@@ -1,0 +1,149 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+
+.homepage {
+  top: 1px;
+  position: absolute;
+  left: 0;              
+  right: 0;
+  display: flex;
+  justify-content: space-between;  
+  align-items: center;
+  padding: 10px 50px;  
+  background: rgba(202, 113, 113, 0.2);
+  backdrop-filter: blur(8px);
+}
+
+.nav-links {
+  display: flex;
+  gap: 50px; 
+}
+
+
+.nav-links a {
+  margin-left: 20px;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #080808;
+}
+
+
+.logo {
+  width: 80px;
+  height: auto;
+  display: block;
+}
+
+.bg {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url("images/Dauin-Dumaguete-Apo-Diving-Philippines-Banner.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.40);
+  z-index: 1;
+}
+
+.hero-section {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 100px; 
+}
+
+.gallery-section {
+  width: 90%;
+  max-width: 1400px;
+  margin: 20px auto 60px auto;
+  text-align: center;
+  color: white;
+}
+
+.gallery-section h1 {
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  margin-bottom: 25px;
+  text-shadow: 0 0 6px black;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 18px;
+}
+
+.gallery img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+  filter: brightness(80%);
+}
+
+@media (max-width: 900px) {
+  .homepage {
+    padding: 12px 25px;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .homepage {
+    flex-direction: column;
+    gap: 8px;
+    padding: 12px 20px;
+    text-align: center;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .gallery img {
+    height: 170px;
+  }
+
+  .gallery-section h1 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .gallery img {
+    height: 150px;
+  }
+
+  .logo {
+    width: 60px;
+  }
+
+  .nav-links a {
+    font-size: 13px;
+  }
+}
